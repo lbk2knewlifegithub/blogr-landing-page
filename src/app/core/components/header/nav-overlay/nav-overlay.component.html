@@ -1,0 +1,44 @@
+<div class="rounded-lg bg-white p-6 grid place-items-center gap-6 shadow-2xl">
+  <ng-container *ngFor="let linkGroup of linkGroups">
+    <lbk-zippy class="w-full" #zippy>
+      <!-- toggle -->
+      <button
+        (click)="toggle(zippy)"
+        class="flex gap-2 items-center mx-auto"
+        zippyToggle
+      >
+        <span>{{ linkGroup.name }}</span>
+        <img
+          [class.rotate-180]="zippy.expanded"
+          class="duration-300"
+          src="/assets/images/icon-arrow-dark.svg"
+          alt="Arrow"
+        />
+      </button>
+      <!-- end toggle -->
+
+      <!-- content -->
+      <ng-template zippyContent>
+        <div
+          [ngClass]="contentClass(zippy.expanded)"
+          class="grid gap-3 bg-black/5 mt-6 text-center py-6 rounded-lg duration-500"
+        >
+          <ng-container *ngFor="let link of linkGroup.links">
+            <a [routerLink]="link.path">{{ link.name }}</a>
+          </ng-container>
+        </div>
+      </ng-template>
+      <!-- end content -->
+    </lbk-zippy>
+  </ng-container>
+
+  <!-- divider -->
+  <div class="h-[1px] w-full bg-black/30"></div>
+  <!-- end divider -->
+
+  <div class="grid gap-6 place-items-center">
+    <a class="font-medium font-ubuntu" routerLink="/">Login</a>
+
+    <a class="btn btn-primary" routerLink="/">Sign Up</a>
+  </div>
+</div>

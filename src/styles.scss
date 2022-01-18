@@ -19,7 +19,7 @@
 
 @layer utilities {
   .btn {
-    @apply font-bold font-ubuntu rounded-full p-4 text-sm;
+    @apply font-bold font-ubuntu rounded-full p-3 text-sm;
   }
 
   .btn-basic {
@@ -28,5 +28,13 @@
 
   .btn-outline {
     @apply border px-6;
+  }
+
+  .bg-primary-gradient {
+    @apply bg-gradient-to-br from-[#FF8F71] to-[#FF3E55];
+  }
+
+  .btn-primary {
+    @apply bg-primary-gradient text-white px-10;
   }
 }

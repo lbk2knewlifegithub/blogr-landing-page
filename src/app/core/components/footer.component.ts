@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import * as fromData from '@blogrs/shared/data';
 import { LinkGroup } from 'src/app/models/link-group.model';
 
 @Component({
@@ -25,68 +26,7 @@ import { LinkGroup } from 'src/app/models/link-group.model';
   </footer>`,
 })
 export class FooterComponent {
-  linkGroups: LinkGroup[] = [
-    {
-      name: 'Product',
-      links: [
-        {
-          name: 'Overview',
-          path: '',
-        },
-        {
-          name: 'Pricing',
-          path: '',
-        },
-        {
-          name: 'Marketplace',
-          path: '',
-        },
-        {
-          name: 'Intergrations',
-          path: '',
-        },
-      ],
-    },
-    {
-      name: 'Company',
-      links: [
-        {
-          name: 'About',
-          path: '',
-        },
-        {
-          name: 'Team',
-          path: '',
-        },
-        {
-          name: 'Blog',
-          path: '',
-        },
-        {
-          name: 'Careers',
-          path: '',
-        },
-      ],
-    },
-
-    {
-      name: 'Connect',
-      links: [
-        {
-          name: 'Contact',
-          path: '',
-        },
-        {
-          name: 'Newsletter',
-          path: '',
-        },
-        {
-          name: 'LinkedIn',
-          path: '',
-        },
-      ],
-    },
-  ];
+  linkGroups: LinkGroup[] = fromData.linkGroups;
 
   identifyLink(index: number, link: LinkGroup) {
     return link.name;

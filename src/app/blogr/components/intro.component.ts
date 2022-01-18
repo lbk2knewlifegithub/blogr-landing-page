@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section
-      class="relative bg-gradient-to-br from-[#FF8F71] to-[#FF3E55] rounded-bl-[100px] h-[600px] z-10 overflow-hidden grid place-content-center"
+      class="relative bg-primary-gradient  rounded-bl-[100px] h-[600px] z-10 overflow-hidden grid place-content-center"
     >
       <img
         class="absolute inset-0 w-full h-full object-cover scale-[180%] z-[-1]"
@@ -15,7 +15,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
       <div class="text-center text-white container">
         <h1 class="font-semibold text-xl leading-10 text-white">
-          A modern <br> publishing platform
+          A modern <br />
+          publishing platform
         </h1>
 
         <p class="px-8 mt-2">Grow your audience and build your online brand</p>
