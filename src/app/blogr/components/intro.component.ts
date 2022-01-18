@@ -37,9 +37,9 @@ import { fadeInOnEnterAnimation } from 'angular-animations';
 })
 export class IntroComponent {
   pattern: Image = {
-    mobile: '/assets/images/bg-pattern-intro-mobile.svg',
-    tablet: '/assets/images/bg-pattern-intro-desktop.svg',
-    desktop: '/assets/images/bg-pattern-intro-desktop.svg',
+    mobile: 'assets/images/bg-pattern-intro-mobile.svg',
+    tablet: 'assets/images/bg-pattern-intro-desktop.svg',
+    desktop: 'assets/images/bg-pattern-intro-desktop.svg',
     alt: 'Pattern Intro mobile',
   };
 }

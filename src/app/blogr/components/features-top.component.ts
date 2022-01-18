@@ -25,9 +25,9 @@ import { Feature, Image } from '@blogrs/models';
 })
 export class FeaturesComponent {
   illustration: Image = {
-    mobile: '/assets/images/illustration-editor-mobile.svg',
-    tablet: '/assets/images/illustration-editor-mobile.svg',
-    desktop: '/assets/images/illustration-editor-desktop.svg',
+    mobile: 'assets/images/illustration-editor-mobile.svg',
+    tablet: 'assets/images/illustration-editor-mobile.svg',
+    desktop: 'assets/images/illustration-editor-desktop.svg',
     alt: 'Illustration',
   };
 
