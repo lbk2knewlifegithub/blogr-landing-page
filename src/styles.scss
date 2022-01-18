@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-black-900 font-semibold text-center;
+  }
+
+  h2 {
+    @apply text-lg;
+  }
+}
+
+@layer utilities {
+  .btn {
+    @apply font-bold font-ubuntu rounded-full p-4 text-sm;
+  }
+
+  .btn-basic {
+    @apply bg-white text-primary-900;
+  }
+
+  .btn-outline {
+    @apply border px-6;
+  }
+}
