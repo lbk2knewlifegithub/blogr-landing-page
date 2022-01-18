@@ -11,7 +11,8 @@ module.exports = {
       padding: {
         DEFAULT: "1.5rem",
         sm: "2rem",
-        lg: "0rem",
+        lg: "3rem",
+        xl: "0rem",
       },
     },
     fontSize: {
@@ -20,6 +21,7 @@ module.exports = {
       lg: ["28px", { letterSpacing: "-0.84px" }],
       xl: ["36px", { letterSpacing: "-1.08px" }],
       "2xl": ["40px", { letterSpacing: "-1.2px" }],
+      "3xl": ["64px", { letterSpacing: "-1.92px" }],
     },
     extend: {
       colors: {
@@ -40,7 +42,7 @@ module.exports = {
     plugin(function ({ addComponents }) {
       addComponents({
         ".container": {
-          maxWidth: "1440px",
+          maxWidth: "1112px",
         },
       });
     }),

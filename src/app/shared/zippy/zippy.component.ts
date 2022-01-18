@@ -12,7 +12,7 @@ import {
   ContentChild,
   Input
 } from '@angular/core';
-import { ZippyContentDirective } from './zippy-content.component';
+import { ZippyContentDirective } from './zippy-content.directive';
 
 @Component({
   selector: 'lbk-zippy',

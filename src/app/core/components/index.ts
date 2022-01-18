@@ -1,9 +1,11 @@
-import { FooterComponent } from './footer.component';
+import { AuthorComponent } from './author.component';
+import * as fromFooter from './footer';
 import * as fromHeader from './header';
 import { LogoComponent } from './logo.component';
 
 export const COMPONENTS = [
   fromHeader.COMPONENTS,
-  FooterComponent,
+  fromFooter.COMPONENTS,
   LogoComponent,
+  AuthorComponent,
 ];

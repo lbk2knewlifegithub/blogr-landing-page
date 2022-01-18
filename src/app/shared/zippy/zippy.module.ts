@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ZippyContentDirective } from './zippy-content.component';
-import { ZippyToggleDirective } from './zippy-toggle.component';
+import { ZippyContentDirective } from './zippy-content.directive';
+import { ZippyToggleDirective } from './zippy-toggle.directive';
 import { ZippyComponent } from './zippy.component';
 
 const DIRECTIVES = [ZippyToggleDirective, ZippyContentDirective];

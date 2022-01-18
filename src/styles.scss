@@ -9,25 +9,30 @@
   h4,
   h5,
   h6 {
-    @apply text-black-900 font-semibold text-center;
+    @apply text-black-900 font-semibold;
   }
 
   h2 {
-    @apply text-lg;
+    @apply text-lg md:text-xl;
   }
 }
 
 @layer utilities {
+  .container-large {
+    max-width: 1440px;
+    margin: auto;
+  }
+
   .btn {
-    @apply font-bold font-ubuntu rounded-full p-3 text-sm;
+    @apply font-bold font-ubuntu rounded-full p-4 text-sm duration-500;
   }
 
   .btn-basic {
-    @apply bg-white text-primary-900;
+    @apply bg-white text-primary-900 hover:bg-primary-900/50 hover:text-white;
   }
 
   .btn-outline {
-    @apply border px-6;
+    @apply border px-6 hover:text-primary-900 hover:bg-white;
   }
 
   .bg-primary-gradient {
@@ -35,6 +40,41 @@
   }
 
   .btn-primary {
-    @apply bg-primary-gradient text-white px-10;
+    @apply bg-primary-gradient text-white px-12 hover:opacity-50;
+  }
+
+  .animated-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 0.1rem;
+    @apply duration-300 hover:text-white hover:font-semibold;
+
+    &:hover:before {
+      left: 0;
+    }
+
+    &:hover:after {
+      right: 0;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      transition: all 0.3s ease-in-out;
+      @apply bg-primary-900 ;
+    }
+
+    &:before {
+      bottom: 0;
+      left: -100%;
+    }
+    &:after {
+      bottom: 0;
+      right: -100%;
+    }
   }
 }

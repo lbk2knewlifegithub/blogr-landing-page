@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: `
     <lbk-header></lbk-header>
     <router-outlet></router-outlet>
-    <lbk-footer class="block mt-[100px]"></lbk-footer>
+    <lbk-footer class="block mt-[100px] md:mt-52 xl:mt-[124px]"></lbk-footer>
   `,
 })
 export class AppComponent {}

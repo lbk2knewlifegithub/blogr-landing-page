@@ -24,7 +24,11 @@
           class="grid gap-3 bg-black/5 mt-6 text-center py-6 rounded-lg duration-500"
         >
           <ng-container *ngFor="let link of linkGroup.links">
-            <a [routerLink]="link.path">{{ link.name }}</a>
+            <a
+              class="duration-500 hover:text-primary-900"
+              [routerLink]="link.path"
+              >{{ link.name }}</a
+            >
           </ng-container>
         </div>
       </ng-template>
@@ -37,7 +41,11 @@
   <!-- end divider -->
 
   <div class="grid gap-6 place-items-center">
-    <a class="font-medium font-ubuntu" routerLink="/">Login</a>
+    <a
+      class="font-medium font-ubuntu duration-500 hover:text-primary-900"
+      routerLink="/"
+      >Login</a
+    >
 
     <a class="btn btn-primary" routerLink="/">Sign Up</a>
   </div>
