@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       <!-- phones -->
       <img
         class="absolute top-0  left-1/2 -translate-x-1/2 -translate-y-[45%] z-30 max-w-[375px]  md:max-w-[472px] xl:left-0 xl:max-w-none xl:translate-x-[23%] xl:-translate-y-[15%]"
-        src="/assets/images/illustration-phones.svg"
+        src="assets/images/illustration-phones.svg"
         alt="Phones"
       />
       <!-- end phones -->
@@ -21,7 +21,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <!-- circle -->
         <img
           class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[50%] xl:left-0 xl:-translate-x-[30%] z-[-1] max-w-[1014px]"
-          src="/assets/images/bg-pattern-circles.svg"
+          src="assets/images/bg-pattern-circles.svg"
           alt="Phones"
         />
         <!-- end circle -->

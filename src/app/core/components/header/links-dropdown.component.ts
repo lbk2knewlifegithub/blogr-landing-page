@@ -11,7 +11,7 @@ import { LinkGroup } from '@blogrs/models/link-group.model';
           <span class="text-white">{{ linkGroup.name }}</span>
           <img
             class="duration-300"
-            src="/assets/images/icon-arrow-light.svg"
+            src="assets/images/icon-arrow-light.svg"
             alt="Arrow"
           />
         </button>
