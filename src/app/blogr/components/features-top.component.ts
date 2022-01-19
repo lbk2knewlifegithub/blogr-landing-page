@@ -8,7 +8,7 @@ import { Feature, Image } from '@blogrs/models';
     <section class="container ">
       <h2 class="text-center">Designed for the future</h2>
 
-      <div class="grid place-items-center xl:grid-cols-2">
+      <div class="grid place-items-center xl:grid-cols-2 xl:-mt-32">
         <lbk-responsive-image
           class="mt-10 xl:order-last xl:translate-x-[27%] xl:min-w-[880px]"
           [image]="illustration"
