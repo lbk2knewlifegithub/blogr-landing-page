@@ -6,7 +6,7 @@ import { Feature, Image } from '@blogrs/models';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="container ">
-      <h2 class="text-center">Designed for the future</h2>
+      <h2 class="text-center md:text-lg">Designed for the future</h2>
 
       <div class="grid place-items-center xl:grid-cols-2">
         <lbk-responsive-image
